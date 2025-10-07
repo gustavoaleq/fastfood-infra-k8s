@@ -1,4 +1,4 @@
-# Infraestrutura Terraform para EKS e Deployments Kubernetes
+# Infraestrutura Terraform para EKS e Deployments Kubernetes API Fastfood
 
 Este repositório utiliza o **Terraform** para provisionar a infraestrutura no **AWS EKS** (Elastic Kubernetes Service) e fazer o **deploy** de aplicações no Kubernetes.
 
