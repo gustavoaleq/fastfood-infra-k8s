@@ -26,7 +26,7 @@ resource "kubernetes_deployment" "fastfood" {
       spec {
         container {
           name  = "fastfood"
-          image = "822168632843.dkr.ecr.us-east-1.amazonaws.com/fastfood-api:latest"
+          image = "gustavoaleq/fastfood:3"
 
           port {
             container_port = 8080
