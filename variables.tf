@@ -5,9 +5,9 @@ variable "aws_region" {
 }
 
 variable "cluster_name" {
-  description = "Name of the EKS cluster"
   type        = string
-  default     = "fastfood-eks-cluster"
+  description = "EKS cluster name"
+  default     = "fastfood-cluster"
 }
 
 variable "node_group_name" {
