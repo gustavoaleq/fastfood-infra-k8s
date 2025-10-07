@@ -36,13 +36,15 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
-        run: terraform plan \
+        run: |
+         terraform plan \
             -var="aws_region=${{ env.aws_region }}" \
             -var="cluster_name=${{ env.CLUSTER_NAME }}"
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
-        run: terraform apply -auto-approve \
+        run: |
+         terraform apply -auto-approve \
             -var="aws_region=${{ env.aws_region }}" \
             -var="cluster_name=${{ env.CLUSTER_NAME }}"
 #
